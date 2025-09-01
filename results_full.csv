@@ -1,0 +1,61 @@
+program,threads,ops_per_thread,trial,time_us,raw_output
+./counter_mutex,1,50000,1,515,threads=1 iters_per_thread=50000 final=50000 time_us=515 | 
+./counter_mutex,1,50000,2,509,threads=1 iters_per_thread=50000 final=50000 time_us=509 | 
+./counter_mutex,1,50000,3,523,threads=1 iters_per_thread=50000 final=50000 time_us=523 | 
+./counter_mutex,2,50000,1,1750,threads=2 iters_per_thread=50000 final=100000 time_us=1750 | 
+./counter_mutex,2,50000,2,1741,threads=2 iters_per_thread=50000 final=100000 time_us=1741 | 
+./counter_mutex,2,50000,3,1694,threads=2 iters_per_thread=50000 final=100000 time_us=1694 | 
+./counter_mutex,4,50000,1,5349,threads=4 iters_per_thread=50000 final=200000 time_us=5349 | 
+./counter_mutex,4,50000,2,5847,threads=4 iters_per_thread=50000 final=200000 time_us=5847 | 
+./counter_mutex,4,50000,3,7504,threads=4 iters_per_thread=50000 final=200000 time_us=7504 | 
+./counter_mutex,8,50000,1,13955,threads=8 iters_per_thread=50000 final=400000 time_us=13955 | 
+./counter_mutex,8,50000,2,13539,threads=8 iters_per_thread=50000 final=400000 time_us=13539 | 
+./counter_mutex,8,50000,3,13270,threads=8 iters_per_thread=50000 final=400000 time_us=13270 | 
+./approx_counter,1,50000,1,119,threads=1 iters_per_thread=50000 threshold=1000 global=50000 time_us=119 | 
+./approx_counter,1,50000,2,54,threads=1 iters_per_thread=50000 threshold=1000 global=50000 time_us=54 | 
+./approx_counter,1,50000,3,54,threads=1 iters_per_thread=50000 threshold=1000 global=50000 time_us=54 | 
+./approx_counter,2,50000,1,65,threads=2 iters_per_thread=50000 threshold=1000 global=100000 time_us=65 | 
+./approx_counter,2,50000,2,65,threads=2 iters_per_thread=50000 threshold=1000 global=100000 time_us=65 | 
+./approx_counter,2,50000,3,65,threads=2 iters_per_thread=50000 threshold=1000 global=100000 time_us=65 | 
+./approx_counter,4,50000,1,115,threads=4 iters_per_thread=50000 threshold=1000 global=200000 time_us=115 | 
+./approx_counter,4,50000,2,81,threads=4 iters_per_thread=50000 threshold=1000 global=200000 time_us=81 | 
+./approx_counter,4,50000,3,83,threads=4 iters_per_thread=50000 threshold=1000 global=200000 time_us=83 | 
+./approx_counter,8,50000,1,270,threads=8 iters_per_thread=50000 threshold=1000 global=400000 time_us=270 | 
+./approx_counter,8,50000,2,151,threads=8 iters_per_thread=50000 threshold=1000 global=400000 time_us=151 | 
+./approx_counter,8,50000,3,206,threads=8 iters_per_thread=50000 threshold=1000 global=400000 time_us=206 | 
+./list_hh,1,50000,1,1682548,threads=1 ops_per_thread=50000 time_us=1682548 | 
+./list_hh,1,50000,2,1591278,threads=1 ops_per_thread=50000 time_us=1591278 | 
+./list_hh,1,50000,3,1619929,threads=1 ops_per_thread=50000 time_us=1619929 | 
+./list_hh,2,50000,1,3203160,threads=2 ops_per_thread=50000 time_us=3203160 | 
+./list_hh,2,50000,2,3028424,threads=2 ops_per_thread=50000 time_us=3028424 | 
+./list_hh,2,50000,3,3029998,threads=2 ops_per_thread=50000 time_us=3029998 | 
+./list_hh,4,50000,1,5905427,threads=4 ops_per_thread=50000 time_us=5905427 | 
+./list_hh,4,50000,2,5613083,threads=4 ops_per_thread=50000 time_us=5613083 | 
+./list_hh,4,50000,3,5777982,threads=4 ops_per_thread=50000 time_us=5777982 | 
+./list_hh,8,50000,1,19642690,threads=8 ops_per_thread=50000 time_us=19642690 | 
+./list_hh,8,50000,2,19787367,threads=8 ops_per_thread=50000 time_us=19787367 | 
+./list_hh,8,50000,3,20453535,threads=8 ops_per_thread=50000 time_us=20453535 | 
+./hash_single,1,50000,1,1413,threads=1 ops_per_thread=50000 time_us=1413 | 
+./hash_single,1,50000,2,1349,threads=1 ops_per_thread=50000 time_us=1349 | 
+./hash_single,1,50000,3,2315,threads=1 ops_per_thread=50000 time_us=2315 | 
+./hash_single,2,50000,1,6357,threads=2 ops_per_thread=50000 time_us=6357 | 
+./hash_single,2,50000,2,6552,threads=2 ops_per_thread=50000 time_us=6552 | 
+./hash_single,2,50000,3,6041,threads=2 ops_per_thread=50000 time_us=6041 | 
+./hash_single,4,50000,1,18667,threads=4 ops_per_thread=50000 time_us=18667 | 
+./hash_single,4,50000,2,19477,threads=4 ops_per_thread=50000 time_us=19477 | 
+./hash_single,4,50000,3,18979,threads=4 ops_per_thread=50000 time_us=18979 | 
+./hash_single,8,50000,1,64932,threads=8 ops_per_thread=50000 time_us=64932 | 
+./hash_single,8,50000,2,63915,threads=8 ops_per_thread=50000 time_us=63915 | 
+./hash_single,8,50000,3,65518,threads=8 ops_per_thread=50000 time_us=65518 | 
+./hash_buckets,1,50000,1,1543,threads=1 ops_per_thread=50000 time_us=1543 | 
+./hash_buckets,1,50000,2,2176,threads=1 ops_per_thread=50000 time_us=2176 | 
+./hash_buckets,1,50000,3,1626,threads=1 ops_per_thread=50000 time_us=1626 | 
+./hash_buckets,2,50000,1,2523,threads=2 ops_per_thread=50000 time_us=2523 | 
+./hash_buckets,2,50000,2,1900,threads=2 ops_per_thread=50000 time_us=1900 | 
+./hash_buckets,2,50000,3,2349,threads=2 ops_per_thread=50000 time_us=2349 | 
+./hash_buckets,4,50000,1,2713,threads=4 ops_per_thread=50000 time_us=2713 | 
+./hash_buckets,4,50000,2,3937,threads=4 ops_per_thread=50000 time_us=3937 | 
+./hash_buckets,4,50000,3,2727,threads=4 ops_per_thread=50000 time_us=2727 | 
+./hash_buckets,8,50000,1,5310,threads=8 ops_per_thread=50000 time_us=5310 | 
+./hash_buckets,8,50000,2,5770,threads=8 ops_per_thread=50000 time_us=5770 | 
+./hash_buckets,8,50000,3,5891,threads=8 ops_per_thread=50000 time_us=5891 | 

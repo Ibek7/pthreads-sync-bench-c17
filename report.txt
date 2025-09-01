@@ -1,0 +1,10 @@
+Report - concurrent data structure experiments
+
+This is a placeholder report. Run the benchmarks and collect timings; then fill in the tables and discussion here. Observations to include:
+- Timer resolution from `timer_test`.
+- Mutex counter scaling with threads and relation to CPU count (use `nproc` or `sysconf`).
+- Approximate counter: effect of `threshold` on performance and accuracy.
+- Hand-over-hand linked list: compare against single-lock list (not included) and discuss when coupling helps.
+- Hash table: compare single global lock vs per-bucket locks; show graphs/tables.
+
+Include collaboration statement and instructions for reproducing experiments.

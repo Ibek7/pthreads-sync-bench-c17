@@ -1,0 +1,31 @@
+program,threads,ops_per_thread,trial,time_us,raw_output
+./counter_mutex,1,20000,1,219,threads=1 iters_per_thread=20000 final=20000 time_us=219 | 
+./counter_mutex,1,20000,2,221,threads=1 iters_per_thread=20000 final=20000 time_us=221 | 
+./counter_mutex,2,20000,1,738,threads=2 iters_per_thread=20000 final=40000 time_us=738 | 
+./counter_mutex,2,20000,2,899,threads=2 iters_per_thread=20000 final=40000 time_us=899 | 
+./counter_mutex,4,20000,1,2228,threads=4 iters_per_thread=20000 final=80000 time_us=2228 | 
+./counter_mutex,4,20000,2,2609,threads=4 iters_per_thread=20000 final=80000 time_us=2609 | 
+./approx_counter,1,20000,1,40,threads=1 iters_per_thread=20000 threshold=1000 global=20000 time_us=40 | 
+./approx_counter,1,20000,2,38,threads=1 iters_per_thread=20000 threshold=1000 global=20000 time_us=38 | 
+./approx_counter,2,20000,1,51,threads=2 iters_per_thread=20000 threshold=1000 global=40000 time_us=51 | 
+./approx_counter,2,20000,2,62,threads=2 iters_per_thread=20000 threshold=1000 global=40000 time_us=62 | 
+./approx_counter,4,20000,1,89,threads=4 iters_per_thread=20000 threshold=1000 global=80000 time_us=89 | 
+./approx_counter,4,20000,2,95,threads=4 iters_per_thread=20000 threshold=1000 global=80000 time_us=95 | 
+./list_hh,1,20000,1,356254,threads=1 ops_per_thread=20000 time_us=356254 | 
+./list_hh,1,20000,2,345842,threads=1 ops_per_thread=20000 time_us=345842 | 
+./list_hh,2,20000,1,998215,threads=2 ops_per_thread=20000 time_us=998215 | 
+./list_hh,2,20000,2,1004755,threads=2 ops_per_thread=20000 time_us=1004755 | 
+./list_hh,4,20000,1,2040850,threads=4 ops_per_thread=20000 time_us=2040850 | 
+./list_hh,4,20000,2,2034555,threads=4 ops_per_thread=20000 time_us=2034555 | 
+./hash_single,1,20000,1,517,threads=1 ops_per_thread=20000 time_us=517 | 
+./hash_single,1,20000,2,537,threads=1 ops_per_thread=20000 time_us=537 | 
+./hash_single,2,20000,1,1934,threads=2 ops_per_thread=20000 time_us=1934 | 
+./hash_single,2,20000,2,3036,threads=2 ops_per_thread=20000 time_us=3036 | 
+./hash_single,4,20000,1,8439,threads=4 ops_per_thread=20000 time_us=8439 | 
+./hash_single,4,20000,2,5827,threads=4 ops_per_thread=20000 time_us=5827 | 
+./hash_buckets,1,20000,1,793,threads=1 ops_per_thread=20000 time_us=793 | 
+./hash_buckets,1,20000,2,559,threads=1 ops_per_thread=20000 time_us=559 | 
+./hash_buckets,2,20000,1,796,threads=2 ops_per_thread=20000 time_us=796 | 
+./hash_buckets,2,20000,2,829,threads=2 ops_per_thread=20000 time_us=829 | 
+./hash_buckets,4,20000,1,936,threads=4 ops_per_thread=20000 time_us=936 | 
+./hash_buckets,4,20000,2,1368,threads=4 ops_per_thread=20000 time_us=1368 | 
